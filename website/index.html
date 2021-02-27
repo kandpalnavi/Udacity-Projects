@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather Journal App</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+			<div class="row d-flex justify-content-center">
+				<div class="row card0">
+					<div class="card1 col-lg-8 col-md-7">
+						<h2 class="text-uppercase"><strong>Weather Journal App</strong></h2>
+						<div class="text-center">
+							<img class="image mt-5" src="media/baloon.png">
+						</div>
+						<div class="row mt-3">
+							<h1 class="large-font">
+								<div class="ui-data" id="temp"></div>
+							</h1>
+						</div>
+						<div class="row mb-3">
+							<div class="d-flex flex-column mr-3">
+								<small>
+									<div class="ui-data" id="date"></div>
+								</small>
+							</div>
+						</div>
+					</div>
+					<div class="card2 col-lg-4 col-md-5">
+						<div class="row px-3">
+							<input type="text" name="zip" id="zip" placeholder="Enter zip code here" class="mb-3">
+							<textarea name="feelings" id="feelings" cols="50" rows="3" placeholder="How you are feeling today?"></textarea>
+							<button type="submit" class="btn btn-primary mt-3 mb-5" id="generate">Generate</button>
+						</div>
+						<div class="mr-5" id="entryHolder">
+							<h5>Weather Details</h5>
+							<div class="line mt-1 mb-3"></div>
+							<div class="row px-3">
+								<p class="light-text"><i class="fa fa-calendar"></i> Date</p>
+								<p class="ml-auto"><div id="date2"></div></p>
+							</div>
+							<div class="row px-3">
+								<p class="light-text"><i class="fa fa-thermometer-half"></i> Temperature</p>
+								<p class="ml-auto"><div id="tempData"></div></p>
+							</div>
+							<div class="row px-3">
+								<p class="light-text"><i class="fa fa-smile"></i> You're feeling</p>
+								<p class="ml-auto"><div id="content"></div></p>
+							</div>
+							<div class="row px-3">
+								<p class="light-text"><i class="fa fa-map"></i> Place</p>
+								<p class="ml-auto"><div id="cityName"></div></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js" type="text/javascript"></script>
+	</body>
+</html>
