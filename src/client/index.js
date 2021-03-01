@@ -1,5 +1,5 @@
 import { displaySentimentAnalysisInfo } from "./js/displaySentimentAnalysisData";
-import{ getRowsCount } from "./js/displaySentimentAnalysisData";
+import { getRowsCount } from "./js/displaySentimentAnalysisData";
 import { isEmptyInput } from "./js/displaySentimentAnalysisData";
 import { handleSubmit } from "./js/formHandler";
 

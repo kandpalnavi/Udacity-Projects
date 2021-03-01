@@ -1,13 +1,13 @@
 function handleSubmit(event) {
     event.preventDefault();
     console.log('Row counts   ',Client.getRowsCount());
-    // check what text was put into the form field
+	
+    // To check what text was put into the form field
     let formText = document.getElementById("name").value;
     let table = document.querySelector("table");
     let rowCount = Client.getRowsCount();
   
-
-    const apiUrl = "http://localhost:8081/sentimentAnalysisApi";
+    const apiUrl = "http://localhost:8080/sentimentAnalysisApi";
 
     console.log("::: Form Submitted :::");
     if (Client.isEmptyInput(formText) === false) {
@@ -34,13 +34,10 @@ function handleSubmit(event) {
         postData(apiUrl, { textToAnalyse: formText }).then(function (res) {
             console.log("es.score_tag", res.score_tag);
             Client.displaySentimentAnalysisInfo(res);
-        });
-        
-       
+        });       
     }
     if (rowCount ===2 )
-    {  console.log("DELETE");
+    {  console.log("Remove");
         table.deleteRow(1); }
 }
-
 export { handleSubmit };

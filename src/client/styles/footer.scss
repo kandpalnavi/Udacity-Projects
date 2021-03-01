@@ -1,9 +1,11 @@
-$bg_form: #eee2dc;
+$bg_form: #e1e1e1;
+
 .footer__page {
     background-color: $bg_form;
     padding-top: 50px;
     padding-bottom: 10px;
 }
+
 .ft-main {
     display: flex;
     flex-wrap: wrap;
@@ -15,9 +17,10 @@ $bg_form: #eee2dc;
 }
 
 .ft-copyright {
-    background-color: rgb(177, 172, 172);
-    color: rgb(158, 152, 152);
+    background-color: #ff9c1a;
+    color: #ffffff;
 }
+
 .ft-copyright-list {
     width: 100%;
     display: flex;

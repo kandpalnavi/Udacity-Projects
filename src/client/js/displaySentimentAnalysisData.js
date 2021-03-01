@@ -2,12 +2,13 @@ function displaySentimentAnalysisInfo(data) {
   const tableRef = document.getElementById("analysis__table");
   var tbodyRef = tableRef.getElementsByTagName("tbody")[0];
 
-  // Insert a row at the end of table
+  // To insert a row at the end of table
   var row = tbodyRef.insertRow();
 
-  // Insert a cell in the row at index 0
+  // To insert a cell in the row at index 0
   let newCell = row.insertCell(0);
-  // Append a text node to the cell
+  
+  // To append a text node to the cell
   let newText = document.createTextNode(data.model);
   newCell.appendChild(newText);
 
@@ -32,7 +33,7 @@ function isEmptyInput(input) {
   const inputext = document.getElementById("name").value;
   const msg = document.getElementById("msg");
   if (inputext === "") {
-      msg.textContent = "Please enter your text 😩";
+      msg.textContent = "Please enter your text!";
       return true;
   } else {
       msg.textContent = "";
@@ -40,9 +41,7 @@ function isEmptyInput(input) {
   }
 }
 
-
 function getRowsCount() {
-  
   let rowCount = 0;
   var table = document.getElementById("analysis__table");
   rowCount = analysis__table.rows.length;

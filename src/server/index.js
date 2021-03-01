@@ -33,17 +33,18 @@ app.get("/", function (req, res) {
 app.post("/sentimentAnalysisApi", async function (req, res) {
     projectData = req.body.textToAnalyse;
     console.log(projectData);
+	
     const ApiUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&lang=en&txt=${projectData}`;
-
     const response = await fetch(ApiUrl);
     const sentimentAnalysisData = await response.json();
+	
     console.log(sentimentAnalysisData);
     res.send(sentimentAnalysisData);
 });
 
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log("Example app listening on port 8081!");
+app.listen(8080, function () {
+    console.log("Example app listening on port 8080!");
 });
 
 app.get("/test", function (req, res) {

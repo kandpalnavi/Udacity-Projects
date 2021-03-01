@@ -1,11 +1,10 @@
-$bg_form: #eee2dc;
+$bg_form: #e1e1e1;
 $text_light: #fff;
-$text_table: #123c69;
+$text_table: #4d4d4d;
 $bg: #ac3b61;
 
-
 form {
-    border: 1px solid #545454;
+    border: 1px solid #dddddd;
     border-radius: 3px;
     padding: 30px;
     padding-bottom: 30px;
@@ -40,6 +39,7 @@ textarea {
     font-weight: bold;
     color: $text_table;
 }
+
 .form__input {
     padding-bottom: 20px;
 }
@@ -70,6 +70,7 @@ td {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 td {
     text-transform: lowercase;
 }
