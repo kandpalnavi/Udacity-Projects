@@ -20,4 +20,4 @@
 
 - [ ] Be able to show content offline
 
-All of these requirements are explained throughout the course. Specifics on setting up the MeaningCloud API are found in the README file of this repo.
+All of these requirements are explained throughout the course. Specifics on setting up the MeaningCloud API are found in the README file of this repository.

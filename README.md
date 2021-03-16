@@ -1,4 +1,4 @@
-# Project Instructions - News Article App
+# Project Instructions - Evaluate a News Article with NLP
 
 The goal of this project is to practice with:
 - Setting up Webpack
