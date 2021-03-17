@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -22,19 +23,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [
-						 "style-loader",
-						 "css-loader",
-						 {
-						   loader: "sass-loader",
-						   options: {
-										 implementation: require("sass"),
-										 sassOptions: {
-														fiber: require("fibers"),
-													},
-									},
-						 },
-					 ],
+				use: ["style-loader", "css-loader", "sass-loader"],
             },
         ],
     },
