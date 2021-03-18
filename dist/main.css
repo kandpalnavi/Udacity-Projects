@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css2?family=Cookie&family=Quattrocento+Sans&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quattrocento Sans, sans-serif
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+header {
+    min-height: 20%;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #f47421;
+    border: 1px solid #f47421;
+	color: #fff;
+}
+
+.input-section,
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.input-section {
+    margin: 2rem;
+    width: 50vw;
+    flex-direction: column;
+    border: 2px solid #000;
+    background-color: #ff9c1a;
+    border-radius: 5px;
+}
+
+.input-field,
+.input-section {
+    min-height: 30%;
+    align-items: center;
+}
+
+.input-field {
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+	color: #fff;
+}
+
+.input-field label {
+	width: 260px;
+}
+
+.city-entered,
+.date {
+    margin: 0.5rem;
+}
+
+input {
+    height: 2rem;
+    width: 10rem;
+    padding: 0.45rem;
+    border-radius: 5px;
+    border: none;
+}
+
+article {
+    min-height: 50vh;
+    max-width: 50%;
+    border-radius: 5px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efe1d0;
+    border: 2px solid #ff9c1a;
+    box-shadow: 0 3px 10px #ff9c1a;
+}
+
+.country-info,
+.forecast-date {
+    padding: 1rem 0 0.5rem;
+    border-bottom: 3px solid #000;
+    min-height: 10%;
+}
+
+.info-list {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.info-list li {
+    padding: .5rem;
+}
+
+img {
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    max-height: 40%;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    padding: .5rem;
+    margin: 1rem;
+    background-color: #000;
+    border-radius: 5px;
+    transition: transform .05s ease-in;
+    box-shadow: none;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #000;
+    color: #ff9c1a;
+    border: 1px solid #fff;
+	transition: transform .05s ease-in;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.fa-exclamation,
+.fa-exclamation-triangle,
+.fas {
+    padding: .5rem;
+}
+
+.error {
+    margin: 2rem;
+    color: #fff;
+    background-color: red;
+    padding: 2rem;
+    border: 4px red;
+}
+
+.hide {
+    z-index: -100;
+    display: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 22vh;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+.footer-title {
+    min-width: 50%;
+    padding: 1rem;
+}
+
+.fab {
+    transition: transform .05s ease-in;
+    color: #000;
+}
+
+.fab:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #6441a5;
+    color: -webkit-linear-gradient(90deg, #2a0845, #6441a5);
+    color: linear-gradient(90deg, #2a0845, #6441a5);
+}
+
+@media (max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .input-section {
+        width: 90%;
+    }
+    .input-field {
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        max-width: 90%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 1.5rem 0;
+}
+
+.my-3 {
+    margin: 2rem 0;
+}
+
+.my-4 {
+    margin: 3rem 0;
+}
+
+.my-5 {
+    margin: 4rem 0;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 1.5rem 0;
+}
+
+.py-3 {
+    padding: 2rem 0;
+}
+
+.py-4 {
+    padding: 3rem 0;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}
