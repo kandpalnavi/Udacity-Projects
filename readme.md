@@ -47,5 +47,3 @@
 - run npm run go
 
 - go to [http://localhost:8080/](http://localhost:8080/)
-
-### Project is hosted on Heroku [https://travel-weather-app-udacity.herokuapp.com/](https://travel-weather-app-udacity.herokuapp.com/)
