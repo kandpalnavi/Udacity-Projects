@@ -31,7 +31,7 @@ const PB_baseURL = 'https://pixabay.com/api/'
 
 // makes all API requests
 app.post('/getCityInfo', async (req,res) => {
-
+	console.log(req.body);
     const {city, date} = req.body
 
     // getting date info
